@@ -41,6 +41,7 @@
             <instance>widevine</instance>
          </interface>
     </hal>
+<<<<<<< HEAD
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
@@ -59,4 +60,6 @@
             <instance>default</instance>
         </interface>
     </hal>
+=======
+>>>>>>> 9f39373... A6020: AEX bringup
 </manifest>

@@ -4,4 +4,4 @@ PRODUCT_PACKAGES += \
     libbson \
     libshim_gui \
     libshim_atomic \
-    Snap\
+    Snap
