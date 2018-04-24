@@ -80,8 +80,13 @@ case "$target" in
             # enable governor for perf cluster
             echo 1 > /sys/devices/system/cpu/cpu0/online
             echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+<<<<<<< HEAD:rootdir/etc/init.qcom.post_boot.sh
             echo "20000 1113600:50000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
             echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+=======
+            echo "20000 800000:50000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
+            echo 95 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+>>>>>>> 15840af... A6020: post_boot: Fine tune values for a more balanced profile:rootdir/bin/init.qcom.post_boot.sh
             echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
             echo 1113600 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
             echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -195,15 +200,29 @@ case "$target" in
             # enable governor for perf cluster
             echo 1 > /sys/devices/system/cpu/cpu0/online
             echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+<<<<<<< HEAD:rootdir/etc/init.qcom.post_boot.sh
             echo "19000 1113600:39000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
             echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+=======
+            echo "19000 800000:39000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
+            echo 95 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+>>>>>>> 15840af... A6020: post_boot: Fine tune values for a more balanced profile:rootdir/bin/init.qcom.post_boot.sh
             echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
             echo 1113600 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
             echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
+<<<<<<< HEAD:rootdir/etc/init.qcom.post_boot.sh
             echo "1 960000:85 1113600:90 1344000:80" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
             echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
             echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/sampling_down_factor
             echo 200000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+=======
+            echo "75 960000:85 1113600:90 1344000:80" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+            echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
+            echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/sampling_down_factor
+            echo 400000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+            echo 1344000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+
+>>>>>>> 15840af... A6020: post_boot: Fine tune values for a more balanced profile:rootdir/bin/init.qcom.post_boot.sh
 
             # enable governor for power cluster
             echo 1 > /sys/devices/system/cpu/cpu4/online
@@ -211,7 +230,7 @@ case "$target" in
             echo 39000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay
             echo 90 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load
             echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
-            echo 800000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
+            echo 998400 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
             echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
             echo "1 800000:90" > /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
             echo 40000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
