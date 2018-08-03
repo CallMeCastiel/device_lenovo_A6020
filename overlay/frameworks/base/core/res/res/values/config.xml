@@ -311,7 +311,6 @@
         <item>"/data/dalvik-cache/arm/system@framework@services.jar@classes.dex"</item>
    </string-array>
 
-<<<<<<< HEAD
     <!-- Should the pinner service pin the Camera application? -->
     <bool name="config_pinnerCameraApp">true</bool>
 
@@ -321,9 +320,8 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">false</bool>
-=======
+
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
->>>>>>> b3c46d3... A6020: overlay: Enable double tap to wake
 
 </resources>
