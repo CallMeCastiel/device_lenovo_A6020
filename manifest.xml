@@ -41,25 +41,4 @@
             <instance>widevine</instance>
          </interface>
     </hal>
-<<<<<<< HEAD
-    <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IColor</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.power</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILineagePower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-=======
->>>>>>> 9f39373... A6020: AEX bringup
 </manifest>
