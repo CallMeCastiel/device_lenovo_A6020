@@ -4,7 +4,7 @@ PRODUCT_PACKAGES += \
     libboringssl-compat \
     libbson \
     libshim_gui \
-    SnapdragonCamera
+    Snap
 
 # Stlport
 PRODUCT_PACKAGES += \
