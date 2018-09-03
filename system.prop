@@ -107,7 +107,7 @@ ro.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=0
 
 # SDcardFS
-ro.sys.sdcardfs=true
+ro.sys.sdcardfs=false
 
 # Time
 persist.timed.enable=true
